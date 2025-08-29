@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Pass Application</title>
+    <style>
+        .header{
+            text-align: center;
+            background-color: aqua;
+        }
+        .h1{
+            color: blue;
+        }
+        .footer {
+                   text-align: center;
+                   margin-top: 20px;
+        }
+        .captcha-box{
+      background-color: darkred;
+      color: white;
+      font-size: 22px;
+      padding: 10px;
+      width: 120px;
+      margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header">
+    <div style="background-color:aqua; display: inline-block; padding: 5px;">
+    <img src="./img of bus pass.jpg" width="70" height="50"  alt="bus pass img">
+    </div>
+    <div class="h1">
+    <h1 >TELANGANA STATE ROAD TRANSPORT CORPORATION</h1>
+    </div>
+    <h1>GENERAL BUS PASS APPLICATION</h1>
+    </div>
+    </header>
+    <!--fieldset> → Creates a border around the form elements.
+    <legend> → Adds a title on top of the border.
+So visually it looks like a box with a heading saying "Student Details"--->
+<!-- Form starts -->
+<form action="">  
+    <fieldset>
+        <legend>
+              <span style="background-color: lightskyblue; color: white; padding:2px 6px; border-radius:4px;">
+                Applicant Details
+              </span>
+  </legend>
+    <div style="display: flex; gap:20px">
+    <label for="name">Name<span style="color:red;">*</span></label>
+    <input type="text" id="name" name="name" required><br><br>
+    <label for="father">Father's/Guardan's Name<span style="color:red;">*</span></label>
+    <input type="text" id="father" name="father" required>
+    </div>
+    <div style="display: flex; gap:20px">
+    <label for="date">Date of birth<span style="color:red;">*</span></label>
+    <input type="date" id="date" required> <br>
+    <label >Gender<span style="color:red;">*</span></label>
+    <input type="radio"id="male" name="gender" value="male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+    </div>
+     <div style="display: flex; gap:20px">
+        <label for="number">Aadhaar No:</label>
+        <input type="text"id="number"name="number">
+        <label for="number">WhatsApp No:</label>
+        <input type="tel"id="number"name="number">
+    </div>
+    <div style="display: flex; gap:20px">
+        <label for="file">Photo</label>
+        <input type="file"id="file"name="file">
+    </div>
+   </fieldset>
+   <fieldset>
+    <legend>
+    <span style="background-color: lightskyblue; color: white; padding:2px 6px; border-radius:4px;">Residential Address Details</span></legend>
+    <div style="display: flex; gap:20px">
+        <label for="address">Applicant's Address<span style="color:red;">*</span></label>
+        <textarea type="address"id="address"name="address"></textarea>
+        <label for="text">District<span style="color:red;">*</span></label>
+        <input type="text" id="text"name="text">
+    </div>
+    <div style="display: flex; gap:20px">
+        <label for="text">Mandal<span style="color:red;">*</span></label>
+        <input type="text" id="text"name="text">
+        <label for="text">Village<span style="color:red;">*</span></label>
+        <input type="text" id="text"name="text">
+    </div>
+    <label for="Pincode">Pincode<span style="color:red;">*</span></label>
+    <input type="text"id="Pincode"name="Pincode">
+   </fieldset>
+    <fieldset>
+        <legend>Pass Type Details</legend>
+        <label for="city">City</label>
+        <input type="text" id="city" name="city">
+        <label for="passType">Pass Type <span style="color:red;">*</span></label>
+<select id="passType" name="passType" required>
+  <option value="">-- Select --</option>
+  <option value="student">Student Pass</option>
+  <option value="employee">Employee Pass</option>
+  <option value="daily">Daily Pass</option>
+  <option value="monthly">Monthly Pass</option>
+</select>
+    </fieldset>
+
+    <fieldset>
+        <legend>
+    <span style="background-color: lightskyblue; color: white; padding:2px 6px; border-radius:4px;">Mode of Payment & Pass Collection</span></legend>
+                <label for="passType">Payment Mode<span style="color:red;">*</span></label>
+<select id="passType" name="passType" required>
+  <option value="">-- Select Payment Mode--</option>
+  <option value="debit ">Debit Card</option>
+  <option value="upi">UPI</option>
+  <option value="credit">Credit Card</option>
+  <option value="net">Net Banking</option>
+</select><br>
+        <label for="passType">Pass Delivery Mode<span style="color:red;">*</span></label>
+<select id="passType" name="passType" required>
+  <option value="">-- Select Pass Delivery Mode--</option>
+  <option value="delivery">Delivery Mode</option>
+  <option value="offline">Offline Mode</option>
+  <option value="online">Online Mode</option>
+</select><br>
+     <label for="passType">Center at Which you want to Collect pass<span style="color:red;">*</span></label>
+<select id="passType" name="passType" required>
+  <option value="">-- Select --</option>
+  <option value="delivery">Delivery Mode</option>
+  <option value="offline">Offline Mode</option>
+  <option value="online">Online Mode</option><br>
+</select>
+    </fieldset>
+    
+    </form>
+    <!-- <--End form---> 
+    <footer class="footer">
+    <div class="captcha-box">
+      JfZvCm
+    </div>
+    <br>
+    <input type="text" placeholder="Enter Captcha"><br><br> 
+    <input type="submit" value="Submit">
+  </footer>
+
+</body>
+</html> 
